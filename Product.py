@@ -26,5 +26,5 @@ class Product(ABC):
         print(f"ID: {self.__product_id}\nName: {self.__name}\nPrice: ${round(self.__price, 2):.2f}\nStock: {self.__stock}")
 
     @abstractmethod
-    def get_fulfilment_info(self):
-        return
+    def get_fulfilment_info(self) -> str:
+        pass

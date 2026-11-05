@@ -14,4 +14,4 @@ class DigitalProduct(Product):
 
     @override
     def get_fulfilment_info(self) -> str:
-        return "digital"
+        return "This product is delivered digitally."
