@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-class Product:
+class Product(ABC):
     def __init__(self, product_id: int, name: str, price: float, stock: int):
         self.__product_id = int(product_id)
         self.__name = str(name)
@@ -24,3 +24,7 @@ class Product:
 
     def display_information(self) -> None:
         print(f"ID: {self.__product_id}\nName: {self.__name}\nPrice: ${round(self.__price, 2):.2f}\nStock: {self.__stock}")
+
+    @abstractmethod
+    def get_fulfilment_info(self):
+        return

@@ -11,3 +11,7 @@ class DigitalProduct(Product):
     def display_information(self) -> None:
         super().display_information()
         print(f"Download Size: {self.__download_size}")
+
+    @override
+    def get_fulfilment_info(self) -> str:
+        return "digital"

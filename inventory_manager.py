@@ -107,6 +107,7 @@ def save_inventory(i: Inventory) -> None:
 #     else:
 #         print("Invalid option. Please try again.")
 
+product = Product(product_id=1, name="product", price=6.90, stock=1)
 physical = PhysicalProduct(product_id=2, name="physical", price=1.40, stock=5, weight=10)
 digital = DigitalProduct(product_id=5, name="digital", price=3.50, stock=500, download_size=5)
 print(f"Physical info: {physical.display_information()}")
