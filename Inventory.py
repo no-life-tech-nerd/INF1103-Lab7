@@ -3,7 +3,7 @@ from logging import warning
 
 class Inventory:
     def __init__(self, products: list[Product]):
-        self.__products = products
+        self.__products: list[Product] = products
 
     def get_products(self) -> list[Product]:
         return self.__products
