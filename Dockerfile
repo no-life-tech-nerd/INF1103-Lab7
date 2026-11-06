@@ -2,7 +2,7 @@ FROM docker.io/library/python:3.14-slim
 
 WORKDIR /app
 
-COPY inventory_manager.py Product.py Inventory.py .
+COPY *.py ./
 
 ENV DATA_PATH=/data
 VOLUME ["/data"]
