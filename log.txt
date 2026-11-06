@@ -1,0 +1,71 @@
+commit 1728b052260f23988d0bd8bb984014367851cb08
+Author: no-life-tech-nerd <2604171@sit.singaporetech.edu.sg>
+Date:   Fri Nov 6 20:44:26 2026 +0800
+
+    feat(product): display fulfilment info
+
+commit 36d04e2cd2390e1087f18fba863db65acd61070d
+Author: no-life-tech-nerd <2604171@sit.singaporetech.edu.sg>
+Date:   Fri Nov 6 20:43:43 2026 +0800
+
+    nit(inventory): type hint list of products in __init__ assignment
+
+commit 3ebfadbd87512b4848561a5dada99608f2d8c9e5
+Author: no-life-tech-nerd <2604171@sit.singaporetech.edu.sg>
+Date:   Fri Nov 6 20:29:49 2026 +0800
+
+    feat(UML): revise UML class diagram in mermaid
+
+commit ee96de1ca8f6a9a4539dbe2f2472bf71468bcbb6
+Author: no-life-tech-nerd <2604171@sit.singaporetech.edu.sg>
+Date:   Fri Nov 6 20:20:48 2026 +0800
+
+    feat(UML): add UML class diagram in mermaid
+
+commit c8f44bb50f7f9d21d0ff49f1b8f469c69d5358d8
+Author: no-life-tech-nerd <2604171@sit.singaporetech.edu.sg>
+Date:   Fri Nov 6 20:18:29 2026 +0800
+
+    feat(main): JSON persistence & identification of PhysicalProduct & DigitalProduct + child info
+
+commit 470f9dcd9914abc34223e46a3a22d888f640a892
+Author: no-life-tech-nerd <2604171@sit.singaporetech.edu.sg>
+Date:   Fri Nov 6 19:37:56 2026 +0800
+
+    feat(main): wire up PhysicalProduct & DigitalProduct to menu
+
+commit eadc7bbd785b77104b8a3245391accdae95bfe55
+Author: no-life-tech-nerd <2604171@sit.singaporetech.edu.sg>
+Date:   Fri Nov 6 19:31:31 2026 +0800
+
+    feat: add CanBeShipped interface, wire up PhysicalProduct
+
+commit 6c71cdf24de0f29d92fbfd4211a97459cc8a41b9
+Author: no-life-tech-nerd <2604171@sit.singaporetech.edu.sg>
+Date:   Thu Nov 5 20:26:10 2026 +0800
+
+    fix(main): disable instanciating abstract class
+
+commit 7e6e0861c83f02db41019f5a5e6356582181f265
+Author: no-life-tech-nerd <2604171@sit.singaporetech.edu.sg>
+Date:   Thu Nov 5 20:19:40 2026 +0800
+
+    feat(products): abstract method get_fulfilment_info()
+
+commit e0a507b1cdf267b63bb47746078e74b0214f3134
+Author: no-life-tech-nerd <2604171@sit.singaporetech.edu.sg>
+Date:   Thu Nov 5 20:10:21 2026 +0800
+
+    fix(main): revert PhysicalProduct & DigitalProduct test
+
+commit add0ab45305cf8ac8e71e0d1d78aea4040cf2d6a
+Author: no-life-tech-nerd <2604171@sit.singaporetech.edu.sg>
+Date:   Thu Nov 5 20:09:43 2026 +0800
+
+    feat: add + test PhysicalProduct & DigitalProduct with method override
+
+commit 4b2d877f371aa5c565f731d2c15edeab69464376
+Author: no-life-tech-nerd <2604171@sit.singaporetech.edu.sg>
+Date:   Thu Nov 5 19:20:35 2026 +0800
+
+    feat: initial commit of structure + lab 6 work
