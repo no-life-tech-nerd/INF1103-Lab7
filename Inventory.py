@@ -15,6 +15,7 @@ class Inventory:
         try:
             for p in self.__products:
                 p.display_information()
+                print("")
         except:
             warning("Error while displaying all inventory!")
 

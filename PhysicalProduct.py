@@ -18,7 +18,7 @@ class PhysicalProduct(Product, CanBeShipped):
     def display_information(self) -> None:
         super().display_information()
         print(f"Weight: {self.__weight}")
-        print(f"Shipping: {self.get_weight()}")
+        print(f"Shipping: ${round(self.calculate_shipping_cost(), 2):.2f}")
 
     @override
     def get_fulfilment_info(self) -> str:

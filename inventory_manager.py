@@ -27,7 +27,12 @@ def load_inventory() -> list[Product]:
     l = []
     for p in data:
         try:
-            l.append(Product(product_id=int(p["product_id"]), name=str(p["name"]), price=float(p["price"]), stock=int(p["stock"])))
+            if p["type"] == "Physical":
+                l.append(PhysicalProduct(product_id=int(p["product_id"]), name=str(p["name"]), price=float(p["price"]), stock=int(p["stock"]), weight=int(p["weight"])))
+            elif p["type"] == "Digital":
+                l.append(DigitalProduct(product_id=int(p["product_id"]), name=str(p["name"]), price=float(p["price"]), stock=int(p["stock"]), download_size=int(p["download_size"])))
+            else:
+                warning(f"The following product data could not be loaded! Data: {str(p)}")
         except ValueError:
             warning(f"\nError while loading data for product ID {p["product_id"]}, check if the types are valid.")
     return l
@@ -36,12 +41,21 @@ def save_inventory(i: Inventory) -> None:
     products = []
     try:
         for p in i.get_products():
-            products.append({
+            product_data = {
                 "product_id": p.get_product_id(),
                 "name": p.get_name(),
                 "price": p.get_price(),
                 "stock": p.get_stock()
-            })
+            }
+            if isinstance(p, PhysicalProduct):
+                product_data["type"] = "Physical"
+                product_data["weight"] = p.get_weight()
+            elif isinstance(p, DigitalProduct):
+                product_data["type"] = "Digital"
+                product_data["download_size"] = p.get_download_size()
+            else:
+                warning(f"The following product could not be saved! Data: {str(p)}")
+            products.append(product_data)
     except:
         warning("\nError while transforming inventory data for JSON save!\n")
     with open(dataFile, 'w') as file:

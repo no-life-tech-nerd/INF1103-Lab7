@@ -7,6 +7,9 @@ class DigitalProduct(Product):
         super().__init__(product_id=product_id, name=name, price=price, stock=stock)
         self.__download_size = download_size
 
+    def get_download_size(self) -> int:
+        return self.__download_size
+
     @override
     def display_information(self) -> None:
         super().display_information()
