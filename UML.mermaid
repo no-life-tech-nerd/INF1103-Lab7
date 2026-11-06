@@ -11,25 +11,22 @@ classDiagram
         + get_stock() int
         + update_stock(new_quantity : int) void
         + display_information() void
-        + to_dict() dict
         + get_fulfilment_info() str
     }
 
     class PhysicalProduct {
-        - weight : float
-        + get_weight() float
+        - weight : int
+        + get_weight() int
         + display_information() void
         + get_fulfilment_info() str
         + calculate_shipping_cost() float
-        + to_dict() dict
     }
 
     class DigitalProduct {
-        - download_size : float
-        + get_download_size() float
+        - download_size : int
+        + get_download_size() int
         + display_information() void
         + get_fulfilment_info() str
-        + to_dict() dict
     }
 
     class CanBeShipped {
