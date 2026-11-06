@@ -23,7 +23,7 @@ class Product(ABC):
         self.__stock = new_quantity
 
     def display_information(self) -> None:
-        print(f"ID: {self.__product_id}\nName: {self.__name}\nPrice: ${round(self.__price, 2):.2f}\nStock: {self.__stock}")
+        print(f"ID: {self.__product_id}\nName: {self.__name}\nPrice: ${round(self.__price, 2):.2f}\nStock: {self.__stock}\nFulfilment: {self.get_fulfilment_info()}")
 
     @abstractmethod
     def get_fulfilment_info(self) -> str:
